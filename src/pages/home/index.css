@@ -1,0 +1,6 @@
+.home-container {
+   @apply p-[200px] pt-[100px];
+   .home-title {
+      @apply flex items-center justify-center font-bold text-[50px] mb-[32px];
+   }
+}

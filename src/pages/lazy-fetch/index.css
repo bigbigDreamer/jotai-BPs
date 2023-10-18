@@ -1,0 +1,6 @@
+.lazy-fetch-demo {
+    @apply flex p-[100px] items-center justify-center;
+    #scrollableDiv {
+        @apply w-[100%] rounded-[16px] border-b-blue-600 min-w-[650px];
+    }
+}

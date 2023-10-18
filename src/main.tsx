@@ -1,5 +1,5 @@
 import ReactLauncher from 'react-launcher';
-
+import  './index.css';
 import routes from "./routes";
 
 const app = new ReactLauncher({

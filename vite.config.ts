@@ -8,5 +8,15 @@ export default defineConfig({
     alias:  [
         { find: /^Pages/, replacement: '/src/pages/' },
       ]
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+        },
+        javascriptEnabled: true,
+      },
+    }
+  },
+
 })
