@@ -6,7 +6,9 @@ export default {
             desc: 'Introducing how to use jotai for lazy requests in production practice'
         },
         {
-            title: 'Local Cache'
+            title: 'Local Cache',
+            path: '/local-cache',
+            desc: 'Introducing how to use jotai and Storage cache user data'
         },
         {
             title: 'Dynamic Atom Key'

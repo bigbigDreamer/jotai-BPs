@@ -1,0 +1,3 @@
+.local-cache-container {
+    @apply flex items-center justify-center p-[200px] flex-col;
+}
