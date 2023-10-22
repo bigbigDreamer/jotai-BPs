@@ -36,5 +36,4 @@ jobs:
           cname: jotai-bps.bigdreamer.cc
           allow_empty_commit: true
           commit_message: ${{ github.event.head_commit.message }}
-          #          publish_branch: main
           force_orphan: true
