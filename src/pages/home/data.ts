@@ -11,7 +11,9 @@ export default {
             desc: 'Introducing how to use jotai and Storage cache user data'
         },
         {
-            title: 'Dynamic Atom Key'
+            title: 'Dynamic Atom Key',
+            path: '/dynamic-atom-key',
+            desc: 'Only Use One Atom Import Instance, Transfer multi Atom Instances'
         },
         {
             title: 'Customize Jotai Hook'

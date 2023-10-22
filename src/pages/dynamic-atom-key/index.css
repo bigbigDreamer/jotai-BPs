@@ -1,0 +1,20 @@
+.dynamic-atom-key-container {
+    @apply flex items-center justify-center p-[200px];
+    .check-container {
+        @apply flex w-[150px] h-[45px] bg-gray-400 p-[2px] rounded-[30px] items-center justify-start;
+        transition: all ease-in-out .8s;
+        &.check-container-switch {
+            @apply bg-blue-600;
+            .check-inner {
+                transform: translateX(109px);
+            }
+        }
+        .check-inner {
+            @apply w-[41px] h-[41px] rounded-[50%] bg-white;
+            transition: all ease-in-out .4s;
+        }
+    }
+    .checked-content {
+        @apply w-[100px] ml-[16px];
+    }
+}
