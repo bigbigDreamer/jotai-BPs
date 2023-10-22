@@ -1,7 +1,6 @@
 import { atomFamily } from 'jotai/utils';
 import {WritableAtom, atom} from "jotai";
 
-
 const keyMapAtom: {
     [StoreKey.CHECK_STORE]: WritableAtom<boolean, boolean[], void>;
     [StoreKey.CONTENT_STORE]: WritableAtom<string, string[], void>

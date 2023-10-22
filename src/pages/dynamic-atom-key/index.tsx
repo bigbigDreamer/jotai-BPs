@@ -10,22 +10,17 @@ const DynamicAtomKey: FC = () => {
 
     const [checked, setChecked] = useAtom<boolean, [boolean], void>(pageStore(StoreKey.CHECK_STORE) as WritableAtom<boolean, boolean[], void>)
     const [content, setContent] = useAtom<string, [string], void>(pageStore(StoreKey.CONTENT_STORE) as WritableAtom<string, string[], void>)
-
     const handleCheck = () => {
         setChecked(!checked)
-
         if(checked) {
             setContent("Not Checked")
         } else {
             setContent("Checked")
         }
     }
-
     const checkContainerCls = classes('check-container', {
         'check-container-switch': checked
     })
-
-
     useEffect(() => () => {
         pageStore.setShouldRemove(() => true);
     })
