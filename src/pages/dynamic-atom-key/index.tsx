@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import {useAtom} from "jotai";
 
 import { pageStore, StoreKey } from "Pages/dynamic-atom-key/store.ts";
@@ -23,6 +23,11 @@ const DynamicAtomKey: FC = () => {
 
     const checkContainerCls = classes('check-container', {
         'check-container-switch': checked
+    })
+
+
+    useEffect(() => () => {
+        pageStore.setShouldRemove(() => true);
     })
 
     return (
