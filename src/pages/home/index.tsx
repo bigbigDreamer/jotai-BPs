@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             <Row gutter={[16, 48]}>
                 {
                     pageData.menus.map(item => (
-                        <Col span={8}>
+                        <Col span={8} md={8} xs={24} xl={24}>
                             <Card hoverable title={item.title} bordered={true} onClick={() => onItemClick(item.path)}>
                                 {item.desc || 'To be supplemented'}
                             </Card>
